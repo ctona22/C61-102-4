@@ -1,0 +1,15 @@
+.flex-gus{/*parent*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 240, 221);
+    height: 500px;
+}
+
+.flex-nicks{ /*children*/
+    background-color: #ffcc00;/*colorname,rgb,hex*/
+    width: 200px;
+}
+
+

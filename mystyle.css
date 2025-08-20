@@ -1,0 +1,124 @@
+/*global*/
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  font-family: arial;
+}
+p{
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  color:white;
+}
+h3{
+  margin: 10px 0px;
+}
+img{
+  max-width: 100%;
+  margin: 10px 0px;
+}
+/*utilities*/
+.container{
+  width:80%;
+  margin:50px auto;
+}
+.text-price{
+  color:rgb(96, 184, 96);
+  font-weight: bold;
+}
+.btn-details{
+  display: block;
+  background-color:orange;
+  color:white;
+  font-size: 12px;
+  padding:5px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+/*header*/
+.site-header {
+  background-image: url(./img/header.jpg);
+  height: 300px;
+  background-size: cover;
+  color:white;
+  text-align: center;
+}
+/*about*/
+.about-container{
+  display: flex;
+  flex-direction: row;
+}
+/*houses*/ 
+.houses-container{
+  display: flex;
+}
+.houses-item{
+  background-color: #dedede;
+  margin-right: 10px;
+}
+.houses-item-text{
+  padding: 20px;
+}
+.houses-items-details{
+  display: flex;
+ justify-content: space-between;
+ margin: 20px;
+}
+.icons-container{
+  display: flex;
+  justify-content: space-around;
+}
+.icons-container img{
+  margin-right: 20px;
+}
+
+/* Tablet View*/
+@media((min-width:601px) and (max-width:768px)){
+  .about-container{
+    flex-direction: column;
+    text-align: justify;
+  }
+  .about-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container img{
+    width: 20%;
+  }
+  .houses-container{
+    flex-direction: column;
+  }
+  .houses-item{
+    margin: 10px 0px;
+  }
+}
+
+/* Phone View */
+@media((max-width:600px)){
+  .about-container{
+    flex-direction: column;
+    text-align: justify;
+  }
+  .about-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container img{
+    width: 40%;
+  }
+  .houses-container{
+    flex-direction: column;
+  }
+  .houses-item{
+    margin: 10px 0px;
+  }
+}
